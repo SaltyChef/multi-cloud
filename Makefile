@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv ~/.flask-ml-azure
+	#python3 -m venv ~/.flask-ml-azure
 	#source ~/.flask-ml-azure/bin/activate
 	
 install:
@@ -12,7 +12,6 @@ test:
 
 
 lint:
-	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
-	pylint --disable=R,C, hello.py
+	pylint --disable=R,C hello.py
 
 all: install lint test
